@@ -1,0 +1,52 @@
+baseURL: "https://blog.linuxmint.pl/"
+languageCode: "pl-pl"
+defaultContentLanguage: "pl"
+title: "Blog Linux Mint Polska"
+theme: "contrast-hugo"
+pagination.pagerSize: 10
+
+
+taxonomies:
+tag: "tagi"
+category: "kategorie"
+
+
+params:
+description: "Blog techniczny o programowaniu, DevOps i architekturze"
+author:
+name: "Linux Mint Polska"
+
+
+colorScheme: auto
+showReadingTime: true
+showCodeCopyButtons: true
+
+
+# SEO
+seo:
+enable: true
+images:
+- "/images/og-default.png"
+
+
+# Wyszukiwarka
+enableSearch: true
+
+
+menu:
+  main:
+    - name: "Blog"
+      url: "/post/"
+      weight: 1
+
+    - name: "Kategorie"
+      url: "/kategorie/"
+      weight: 2
+
+    - name: "Tagi"
+      url: "/tagi/"
+      weight: 3
+
+    - name: "O mnie"
+      url: "/about/"
+      weight: 4

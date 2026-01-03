@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog Linux Mint Polska</title>
+    <link>https://blog.linuxmint.pl/post/</link>
+    <description>Recent content in Posts on Blog Linux Mint Polska</description>
+    <generator>Hugo</generator>
+    <language>pl-pl</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.linuxmint.pl/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pierwszy wpis</title>
+      <link>https://blog.linuxmint.pl/post/pierwszy-wpis/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.linuxmint.pl/post/pierwszy-wpis/</guid>
+      <description>Pierwszy wpis na nowym blogu</description>
+    </item>
+  </channel>
+</rss>
