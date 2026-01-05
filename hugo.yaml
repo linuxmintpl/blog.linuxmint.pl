@@ -4,6 +4,7 @@ defaultContentLanguage: "pl"
 title: "Blog Linux Mint Polska"
 theme: "contrast-hugo"
 pagination.pagerSize: 10
+enableGitInfo: true
 
 
 taxonomies:

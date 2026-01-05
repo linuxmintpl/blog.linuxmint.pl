@@ -1,0 +1,19 @@
+{{/* Shortcode: author */}}
+{{ $author := "" }}
+
+{{ if .Page.Params.author }}
+  {{ $author = .Page.Params.author }}
+{{ else if .Page.GitInfo }}
+  {{ $author = .Page.GitInfo.AuthorName }}
+{{ else }}
+  {{ $author = "Nieznany" }}
+{{ end }}
+
+<hr style="margin: 2em 0; border: none; border-top: 1px solid #ccc;">
+
+<p class="author" style="text-align: right; font-style: italic; color: #555; margin: 0.5em 0;">
+  Autor: {{ $author }}
+  {{ if .Page.GitInfo }}
+    | Ostatnia zmiana: {{ .Page.GitInfo.AuthorDate.Format "2006-01-02" }}
+  {{ end }}
+</p>
