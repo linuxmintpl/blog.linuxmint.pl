@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+<title>schowek() – prosty schowek do kopiowania z terminala | Blog Linux Mint Polska</title>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.154.2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="https://blog.linuxmint.pl/css/index.css">
+<link rel="stylesheet" href="https://blog.linuxmint.pl/PT-Sans/index.css">
+<link rel="canonical" href="https://blog.linuxmint.pl/post/schowek-cli/">
+<link rel="alternate" type="application/rss+xml" href="" title="Blog Linux Mint Polska">
+
+
+<header class="hover">
+  <h1 class=""><a href="https://blog.linuxmint.pl/">Blog Linux Mint Polska</a></h1>
+  
+  
+    
+      
+    
+  
+  
+    <nav>
+    
+      
+        <a href="/post/">Blog</a>
+      
+    
+      
+        <a href="/kategorie/">Kategorie</a>
+      
+    
+      
+        <a href="/tagi/">Tagi</a>
+      
+    
+      
+        <a href="/about/">O mnie</a>
+      
+    
+    </nav>
+  
+</header>
+
+<article>
+  <header class="meta">
+    <h1><a href="/post/schowek-cli/">schowek() – prosty schowek do kopiowania z terminala</a></h1>
+    <time datetime="2026-01-05T00:00:00Z">January 05, 2026</time>
+  </header>
+  <p>Praca w terminalu bardzo często kończy się potrzebą skopiowania wyniku polecenia do schowka systemowego.<br>
+Ręczne zaznaczanie tekstu myszką nie zawsze jest wygodne, szczególnie podczas pracy na serwerach lub w tiling window managerach.</p>
+<p>Poniżej pokażę <strong>prosty i bardzo użyteczny skrót</strong>, który pozwala kopiować dane do schowka bezpośrednio z terminala.</p>
+<hr>
+<h2 id="funkcja-schowek">Funkcja <code>schowek()</code></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>schowek<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  xclip -sel clip
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Ta funkcja:</p>
+<ul>
+<li>czyta dane ze standardowego wejścia (STDIN)</li>
+<li>zapisuje je bezpośrednio do schowka systemowego (clipboard)</li>
+</ul>
+<p>Dzięki temu możesz kopiować wynik dowolnego polecenia jednym pipe’em.</p>
+<h2 id="wymagania">Wymagania</h2>
+<p>Funkcja korzysta z narzędzia <code>xclip</code>, które musi być zainstalowane w systemie.</p>
+<h3 id="instalacja-xclip">Instalacja <code>xclip</code></h3>
+<p><strong>Debian / Ubuntu</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install xclip
+</span></span></code></pre></div><p><strong>Archlinux</strong></p>
+<pre tabindex="0"><code>sudo pacman -S xclip
+</code></pre><h3 id="jak-używać">Jak używać?</h3>
+<ul>
+<li>Kopiowanie wyniku polecenia
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  ls -la | schowek
+</span></span></code></pre></div></li>
+<li>Kopiowanie zawartości pliku
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/hosts | schowek
+</span></span></code></pre></div></li>
+</ul>
+
+
+
+
+  
+
+
+<hr style="margin: 2em 0; border: none; border-top: 1px solid #ccc;">
+
+<p class="author" style="text-align: right; font-style: italic; color: #555; margin: 0.5em 0;">
+  Autor: Ulvhedin
+  
+    | Ostatnia zmiana: 2026-01-05
+  
+</p>
+
+
+</article>
+
+
+<footer class="nowrap"><span></span> <a class="dark" href="/post/pierwszy-wpis/">Pierwszy wpis »</a></footer>
+
+
+</html>

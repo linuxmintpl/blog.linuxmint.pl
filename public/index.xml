@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Linux Mint Polska</title>
+    <link>https://blog.linuxmint.pl/</link>
+    <description>Recent content on Blog Linux Mint Polska</description>
+    <generator>Hugo</generator>
+    <language>pl-pl</language>
+    <lastBuildDate>Mon, 05 Jan 2026 21:17:02 +0100</lastBuildDate>
+    <atom:link href="https://blog.linuxmint.pl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>schowek() – prosty schowek do kopiowania z terminala</title>
+      <link>https://blog.linuxmint.pl/post/schowek-cli/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.linuxmint.pl/post/schowek-cli/</guid>
+      <description>&lt;p&gt;Praca w terminalu bardzo często kończy się potrzebą skopiowania wyniku polecenia do schowka systemowego.&lt;br&gt;&#xA;Ręczne zaznaczanie tekstu myszką nie zawsze jest wygodne, szczególnie podczas pracy na serwerach lub w tiling window managerach.&lt;/p&gt;&#xA;&lt;p&gt;Poniżej pokażę &lt;strong&gt;prosty i bardzo użyteczny skrót&lt;/strong&gt;, który pozwala kopiować dane do schowka bezpośrednio z terminala.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;funkcja-schowek&#34;&gt;Funkcja &lt;code&gt;schowek()&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;schowek&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  xclip -sel clip&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ta funkcja:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;czyta dane ze standardowego wejścia (STDIN)&lt;/li&gt;&#xA;&lt;li&gt;zapisuje je bezpośrednio do schowka systemowego (clipboard)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Dzięki temu możesz kopiować wynik dowolnego polecenia jednym pipe’em.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pierwszy wpis</title>
+      <link>https://blog.linuxmint.pl/post/pierwszy-wpis/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.linuxmint.pl/post/pierwszy-wpis/</guid>
+      <description>Pierwszy wpis na nowym blogu</description>
+    </item>
+    <item>
+      <title>O mnie</title>
+      <link>https://blog.linuxmint.pl/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.linuxmint.pl/about/</guid>
+      <description>&lt;p&gt;Blog ekipy systemu podobno dla początkujących&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
