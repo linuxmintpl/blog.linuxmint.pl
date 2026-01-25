@@ -1,5 +1,5 @@
 ---
-title: "O mnie"
+title: "O nas"
 ---
 
 

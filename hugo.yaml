@@ -40,14 +40,14 @@ menu:
       url: "/post/"
       weight: 1
 
-    - name: "Kategorie"
-      url: "/kategorie/"
-      weight: 2
+#    - name: "Kategorie"
+#      url: "/kategorie/"
+#      weight: 2
 
-    - name: "Tagi"
-      url: "/tagi/"
-      weight: 3
+#    - name: "Tagi"
+#      url: "/tagi/"
+#      weight: 3
 
-    - name: "O mnie"
+    - name: "O nas"
       url: "/about/"
-      weight: 4
+      weight: 2
